@@ -110,7 +110,6 @@ code {
     border-radius: 5px;
     min-height: 20px;
 }
-#nevEredmeny.hiba{
+#nevEredmeny.hiba, #telEredmeny.hiba, #mailEredmeny.hiba{
     color:  red;
-    background-color: white;
 }

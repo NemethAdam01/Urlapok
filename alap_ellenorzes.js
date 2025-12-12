@@ -21,6 +21,7 @@ function ellenorAlap()
     if(!nevFilter.test(nev))
         {
         alert("A név mező csak betűket és szóközt tartalmazhat!")
+        
         return false
         }
 
