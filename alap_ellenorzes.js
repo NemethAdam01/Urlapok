@@ -2,12 +2,18 @@
 
 function ellenorAlap()
 {
+    let nevKiirasa = document.getElementById("nevEredmeny")
     let nev = document.forms["alapUrlap"]["nev"].value
     console.log(nev)
 
     if(nev.trim() === "")
         {
         alert("A név mező nem lehet üres!")
+        nevKiirasa = document.getElementById("nevEredmeny")
+        if(nevKiirasa){
+            nevKiirasa.innerText = "A név mező nem lehet üres!"
+            nevKiirasa.classList.add("hiba")
+        }
         return false
         }
         
@@ -18,7 +24,7 @@ function ellenorAlap()
         return false
         }
 
-    let nevKiirasa = document.getElementById("nevEredmeny")
+    nevKiirasa = document.getElementById("nevEredmeny")
     nevKiirasa.innerText = "A megadott név: " + nev
     return false
 }

@@ -110,4 +110,7 @@ code {
     border-radius: 5px;
     min-height: 20px;
 }
-
+#nevEredmeny.hiba{
+    color:  red;
+    background-color: white;
+}
