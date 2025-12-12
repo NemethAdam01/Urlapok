@@ -26,5 +26,6 @@ function ellenorAlap()
 
     nevKiirasa = document.getElementById("nevEredmeny")
     nevKiirasa.innerText = "A megadott név: " + nev
+    nevKiirasa.classList.remove("hiba")
     return false
 }
