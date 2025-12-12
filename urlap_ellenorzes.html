@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlapok ellenőrzése JavaScript-tel</title>
+    <!-- Külső CSS fájl betöltése -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Űrlapok ellenőrzése JavaScript-tel</h1>
+    
+
+        <h2>1. Alapvető űrlap - Name attribútum használata</h2>
+
+        <!-- Alapvető űrlap példa -->
+        <form action="" name="alapUrlap" onsubmit="return ellenorAlap();">
+            <p>Neve: <input type="text" name="nev" placeholder="Adja meg a nevét"></p>
+            <input type="submit" value="Elküld">
+        </form>
+        
+        <!-- Eredmény megjelenítése az első űrlap alatt -->
+        <div id="nevEredmenyek">
+            <p id="nevEredmeny">&nbsp;</p>
+        </div>
+
+        <h2>2. Telefonszám és E-mail ellenőrzése</h2>
+
+        <!-- Telefon és email ellenőrzéses űrlap -->
+        <form action="" name="urlap" onsubmit="return ellenor();">
+            <p>Telefon: <input type="text" name="tel" placeholder="pl: (06) 20-123-4567"></p>
+            <p>E-mail: <input type="text" name="mail" placeholder="pl: pelda@email.hu"></p>
+            <input type="submit" value="Elküld">
+        </form>
+        
+        <!-- Eredmények megjelenítése az űrlap alatt -->
+        <div id="eredmenyek">
+            <p id="telEredmeny">&nbsp;</p>
+            <p id="mailEredmeny">&nbsp;</p>
+        </div>
+
+    </div>
+
+    <!-- JavaScript fájlok betöltése feladatonként -->
+    <!-- 1. feladat: Alapvető űrlap ellenőrzés -->
+    <script src="alap_ellenorzes.js"></script>
+    
+    <!-- 2. feladat: Telefonszám és E-mail ellenőrzés -->
+    <script src="telefon_email_ellenorzes.js"></script>
+</body>
+</html>
+
